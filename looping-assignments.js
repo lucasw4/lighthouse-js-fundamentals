@@ -14,9 +14,9 @@ const range = function(start, end, step) {
     } return array;
   }
 }
-// console.log(range(0, 10, 2));
-// console.log(range(10, 30, 5));
-// console.log(range(-5, 2, 3));
+console.log(range(0, 10, 2));
+console.log(range(10, 30, 5));
+console.log(range(-5, 2, 3));
 
 // SECOND ASSIGNMENT
 console.log('------------------------\n Second Assignment')
@@ -38,3 +38,19 @@ console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 2), "=?", 4);
 console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 3), "=?", -1);
 console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
 console.log(lastIndexOf([], 3), "=?", -1);
+
+// THIRD ASSIGNMENT
+console.log('------------------------\n Third Assignment')
+const concat = function(arr1, arr2) {
+  let array = [];
+  for (let i = 0; i < arr1.length; i++) {
+    array.push(arr1[i]);
+  } for (let item = 0; item < arr2.length; item++) {
+    array.push(arr2[item])
+  } 
+  return array;
+}
+console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
+console.log(concat([ 0, 3, 1 ], [ 9, 7, 2 ]), "=?", [ 0, 3, 1, 9, 7, 2 ]);
+console.log(concat([], [ 9, 7, 2 ]), "=?", [ 9, 7, 2 ]);
+console.log(concat([ 5, 10 ], []), "=?", [ 5, 10 ]);
